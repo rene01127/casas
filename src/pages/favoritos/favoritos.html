@@ -1,0 +1,27 @@
+<!--
+  Generated template for the FavoritosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>favoritos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let c of casa">
+    <img [src]=c.imagen>
+    <ion-card-header>
+      {{c.titulo}}
+    </ion-card-header>
+    <ion-card-header>
+      {{c.precio}}
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
